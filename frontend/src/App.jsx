@@ -22,11 +22,13 @@ function App() {
 
   console.log({authUser});
 
-  if(isCheckingAuth && !authUser) return (
+  if(isCheckingAuth && !authUser) {
+    return (
      <div className="flex items-center justify-center h-screen">
       <span className="loading loading-bars loading-xl"></span>
      </div>
   )
+  }
  
   return (
    <div data-theme= { theme } >
